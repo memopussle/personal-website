@@ -3,15 +3,17 @@
     height: 80vh;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    width:50vw;
+
     & h1 {
       font-family: "Playfair Display", serif;
       font-weight: 500;
     }
 
-     & p  {
-        letter-spacing: 1.2;
-
-     }
+    & p {
+      letter-spacing: 1.2;
+    }
   }
 
   &__name {
@@ -23,30 +25,58 @@
     font-size: clamp(3.5rem, 4vw, 5rem);
   }
 
-  &__describe {
-    color: var(--secondary-text-color);
-  }
 
   &__button {
     margin-right: var(--small-padding);
   }
+
+  &__download {
+    color: var(--primary-red-orange);
+
+    &:hover {
+        color: var(--primary-red-orange);
+    }
+  }
 }
 
 .social-media {
-   
+  position: absolute;
+  right:6rem;
+  bottom: 2%;
+ 
+  &__stick {
+    width: 0.1rem;
+    height: 8rem;
+    background: linear-gradient(var(--primary-purple), var(--primary-blue));
+     box-shadow: 4px 15px 21px 5px rgba(33, 211, 231, 0.266);
 
-     &--stick {
-        width: 0.1rem;
-        height: 6rem;
-        background-color: white;
+    &-wrapper {
+      width: 2.2rem;
+      height: 8rem;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  }
 
-        &-wrapper {
-            width: 2.2rem;
-            height: 6rem;
-            display: flex;
-            justify-content: center;
-        }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    
+    & > * {
+         box-shadow: 4px -20px 21px 5px rgba(241, 10, 210, 0.112);
+        transition: all 0.3s ease;
+     &:hover {
+        transform: scale(1.1);
+        box-shadow: 4px -20px 21px 5px rgba(10, 241, 233, 0.134);
      }
+  
+        }
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 @keyframes infinite-color {
@@ -59,4 +89,11 @@
   100% {
     color: var(--primary-orange);
   }
+}
+
+
+@media only screen and (min-width: 70rem) { 
+    .social-media {
+        right: 15rem;
+    }
 }

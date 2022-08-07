@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;700&display=swap");
 
 html,
 body {
@@ -12,7 +12,7 @@ button {
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
   line-height: 1.5;
-
+  color: var(--secondary-text-color);
 }
 
 *,
@@ -21,7 +21,6 @@ button {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 :root {
@@ -31,6 +30,17 @@ button {
   --small-padding: 2rem;
   --primary-text-color: white;
   --standard-padding: 4rem;
+  --primary-purple: #d65fe1;
+  --primary-blue: #50f1f8;
+  --section-margin: 8rem;
+}
+
+.secondary-text {
+  color: var(--secondary-text-color);
+}
+
+.primary-text {
+  color: var(--primary-text-color);
 }
 
 .background {
@@ -39,7 +49,11 @@ button {
 }
 
 .small-margin {
-  margin-top: 2rem;
+  margin-top: var(--small-padding);
+}
+
+.section-margin {
+  margin-top: var(--section-margin);
 }
 
 .container {
@@ -54,6 +68,10 @@ h2 {
   font-size: clamp(3.5rem, 4vw, 5rem);
 }
 
+h3 {
+  font-size: clamp(3rem, 3.5vw, 4.5rem);
+}
+
 p,
 button,
 a {
@@ -65,8 +83,11 @@ ul {
 }
 
 a {
-  color: var(--primary-red-orange);
+  color: var(--secondary-text-color);
 
+  &:hover {
+    color: var(--primary-text-color);
+  }
 }
 
 .flex {
@@ -95,6 +116,7 @@ a {
   padding: 1rem 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: var(--primary-text-color);
 
   &:hover {
     transform: translateY(-3px);
@@ -112,5 +134,3 @@ a {
     color: white;
   }
 }
-
-

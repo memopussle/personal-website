@@ -4,3 +4,4 @@ export { default as Projects } from "./Project/Projects";
 export { default as Experience } from "./Experience/Experience";
 export { default as Contact } from "./Contact/Contact";
 export { default as LandingPage } from "./LandingPage/LandingPage";
+export { default as Skills } from "./Skills/Skills";

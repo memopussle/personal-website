@@ -1,0 +1,31 @@
+.about {
+  &__wrapper {
+    width: 70vw;
+    height: auto;
+    background: rgba(61, 61, 61, 0.089);
+    box-shadow: 0 8px 32px 0 rgba(27, 94, 133, 0.137);
+    backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(86, 86, 86, 0.107);
+    border-radius: 2rem;
+    padding: var(--small-padding);
+    transition: all 0.2s ease;
+    flex-direction: row-reverse;
+    align-items: center;
+   
+    &:hover {
+      box-shadow: 0 8px 32px 0 rgba(27, 94, 133, 0.227);
+      transform: translateY(-4px);
+    }
+  }
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+   margin-left: var(--small-padding);
+    
+
+    &--2 {
+      color: var(--primary-orange);
+    }
+  }
+}

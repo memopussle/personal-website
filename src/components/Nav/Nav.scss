@@ -25,6 +25,7 @@ ul {
     left: 0;
     padding-top: var(--small-padding);
     height: 100vh;
+        z-index: 1000;
  
     & p {
         cursor: pointer;
