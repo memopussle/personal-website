@@ -1,0 +1,58 @@
+ul {
+  color: var(--secondary-text-color);
+}
+
+.nav {
+  padding-top: 2rem;
+  &__medium {
+    display: none;
+
+    p {
+      cursor: pointer;
+      margin-right: var(--small-padding);
+
+      &:hover {
+        color: var(--primary-text-color);
+      }
+    }
+  }
+
+  &__small {
+    position: absolute;
+    top: 5rem;
+    width: 20rem;
+    text-align: center;
+    left: 0;
+    padding-top: var(--small-padding);
+    height: 100vh;
+ 
+    & p {
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+  }
+
+  &__menu {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 60rem) {
+  .nav {
+    &__menu {
+      display: none;
+    }
+    &__medium {
+      display: block;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__small {
+        display: none;
+    }
+  }
+}
