@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import "./Project.scss";
+import Videos from "./Videos/Videos";
 
 const Projects = () => {
   return (
-    <div>Projects</div>
-  )
-}
+    <div id="projects" className="container section-margin ">
+      <h3 className="project__title primary-text ">
+        Selected Projects
+      </h3>
+      <div>
+        <Videos />
 
-export default Projects
+    
+      </div>
+    </div>
+  );
+};
+
+export default Projects;

@@ -19,36 +19,36 @@ const Nav = () => {
 
         <ul className="nav__medium">
           <li>
-            <p onClick={() => window.location.replace("/#home")}>Home</p>
+            <p onClick={() => window.location.replace("/#home")}>HOME</p>
           </li>
           <li>
-            <p onClick={() => window.location.replace("/#about")}>About</p>
+            <p onClick={() => window.location.replace("/#about")}>ABOUT</p>
           </li>
           <li>
             <p onClick={() => window.location.replace("/#projects")}>
-              Projects
+              PROJECTS
             </p>
           </li>
           <li>
-            <p onClick={() => window.location.replace("/#contact")}>Contact</p>
+            <p onClick={() => window.location.replace("/#contact")}>CONTACT</p>
           </li>
         </ul>
         {navOpen === true && (
           <ul className="nav__small">
             <li>
-              <p onClick={() => window.location.replace("/#home")}>Home</p>
+              <p onClick={() => window.location.replace("/#home")}>HOME</p>
             </li>
             <li>
-              <p onClick={() => window.location.replace("/#about")}>About</p>
+              <p onClick={() => window.location.replace("/#about")}>ABOUT</p>
             </li>
             <li>
               <p onClick={() => window.location.replace("/#projects")}>
-                Projects
+                PROJECTS
               </p>
             </li>
             <li>
               <p onClick={() => window.location.replace("/#contact")}>
-                Contact
+                CONTACT
               </p>
             </li>
           </ul>

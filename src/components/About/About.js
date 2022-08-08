@@ -3,9 +3,9 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <section className="section-margin">
+    <section className="section-margin" id="about">
       <div className="container">
-        <div className="about__wrapper flex">
+        <div className="about__wrapper ">
           <h3 className="about__title primary-text">About <span className="about__title--2">Me</span></h3>
 
           <p className="small-margin">

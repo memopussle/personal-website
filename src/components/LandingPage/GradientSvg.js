@@ -48,6 +48,19 @@ const GradientSvg = () => {
           <stop stopColor="#d65fe1" offset="70%" />
         </linearGradient>
       </svg>
+
+      <svg width="0" height="0">
+        <linearGradient
+          id="all-purple-gradient"
+          x1="100%"
+          y1="100%"
+          x2="0%"
+          y2="0%"
+        >
+          <stop stopColor="#3dd3d7" offset="0%" />
+          <stop stopColor="#d65fe1" offset="50%" />
+        </linearGradient>
+      </svg>
     </div>
   );
 };

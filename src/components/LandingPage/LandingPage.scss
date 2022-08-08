@@ -28,6 +28,7 @@
 
   &__button {
     margin-right: var(--small-padding);
+    margin-bottom: var(--small-padding);
   }
 
   &__download {
@@ -39,6 +40,8 @@
   }
 }
 
+
+
 .social-media {
   position: absolute;
   right:6rem;
@@ -48,7 +51,7 @@
     width: 0.1rem;
     height: 8rem;
     background: linear-gradient(var(--primary-purple), var(--primary-blue));
-     box-shadow: 4px 15px 21px 5px rgba(33, 211, 231, 0.266);
+     box-shadow: 4px 15px 21px 5px rgba(33, 211, 231, 0.281);
 
     &-wrapper {
       width: 2.2rem;
@@ -64,11 +67,11 @@
     flex-direction: column;
     
     & > * {
-         box-shadow: 4px -20px 21px 5px rgba(241, 10, 210, 0.112);
+         box-shadow: 4px -20px 21px 5px rgba(241, 10, 210, 0.167);
         transition: all 0.3s ease;
      &:hover {
         transform: scale(1.1);
-        box-shadow: 4px -20px 21px 5px rgba(10, 241, 233, 0.134);
+        box-shadow: 4px -20px 21px 5px rgba(10, 241, 233, 0.162);
      }
   
         }
@@ -94,6 +97,6 @@
 
 @media only screen and (min-width: 70rem) { 
     .social-media {
-        right: 15rem;
+        right: 17rem;
     }
 }

@@ -39,6 +39,10 @@ button {
   color: var(--secondary-text-color);
 }
 
+.secondary-font {
+  font-family: "Playfair Display", serif;
+}
+
 .primary-text {
   color: var(--primary-text-color);
 }
@@ -55,6 +59,11 @@ button {
 .section-margin {
   margin-top: var(--section-margin);
 }
+
+.color-orange {
+  color: var(--primary-orange);
+}
+
 
 .container {
   margin: 0 clamp(2.4rem, 15%, 26rem);
@@ -106,6 +115,13 @@ a {
   display: none;
 }
 
+@mixin button {
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
 .normal-button {
   background: linear-gradient(
     to right,
@@ -113,10 +129,8 @@ a {
     var(--primary-red-orange)
   );
   border: none;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: var(--primary-text-color);
+
+  @include button;
 
   &:hover {
     transform: translateY(-3px);
@@ -132,5 +146,26 @@ a {
 
   &:hover {
     color: white;
+  }
+}
+
+.border-button {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      var(--primary-blue),
+      var(--primary-purple)
+    )
+    1;
+  @include button;
+    box-shadow: 0px 3px 21px 5px rgba(231, 26, 214, 0.212);
+
+  &:hover {
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 3px 21px 5px rgba(231, 26, 214, 0.348);
+    }
   }
 }
