@@ -3,15 +3,15 @@ import "./App.scss";
 import { Nav, Skills, Projects, Experience, Contact, About, LandingPage } from "./components/index";
 
 function App() {
-  return (
-    <div className="background">
-      <Nav />
 
+  return (
+    <div className="background" >
+      <Nav />
 
       <LandingPage />
       <About />
       <Skills />
-      <Projects />
+      <Projects  />
       <Experience />
       <Contact />
     </div>

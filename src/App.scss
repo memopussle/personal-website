@@ -38,6 +38,9 @@ button {
 .secondary-text {
   color: var(--secondary-text-color);
 }
+.font-weight-normal {
+  font-weight: 500;
+}
 
 .secondary-font {
   font-family: "Playfair Display", serif;
@@ -80,7 +83,9 @@ h2 {
 h3 {
   font-size: clamp(3rem, 3.5vw, 4.5rem);
 }
-
+h4 {
+  font-size: clamp(2.5rem, 3vw, 4rem);
+}
 p,
 button,
 a {
@@ -168,4 +173,10 @@ a {
       box-shadow: 0px 3px 21px 5px rgba(231, 26, 214, 0.348);
     }
   }
+}
+
+// pop up
+.overlay {
+  background-color: rgba(31, 31, 31, 0.081);
+  position: relative;
 }

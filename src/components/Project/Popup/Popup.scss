@@ -1,0 +1,29 @@
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.947);
+  padding: var(--small-padidng);
+  z-index: 100;
+  filter: brightness(100%) !important;
+  height: 150vh;
+  width: 70%;
+  color: black;
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, rgba(47, 127, 145, 0.114), rgba(148, 167, 168, 0.174)) ;
+    box-shadow: 0 8px 32px 0 rgba(32, 41, 133, 0.37);
+    border-radius: 10px;
+    color: white;
+    padding:var(--standard-padding);
+  }
+}
+
+.popup {
+    &__img{
+        width: 100%;
+    }
+}
