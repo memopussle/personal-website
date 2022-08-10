@@ -1,29 +1,58 @@
 .modal {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.947);
-  padding: var(--small-padidng);
-  z-index: 100;
-  filter: brightness(100%) !important;
-  height: 150vh;
-  width: 70%;
+  z-index: 1500;
+  height: 200vh;
+  width: 100%;
   color: black;
   display: flex;
   justify-content: center;
+ align-items: center;
+ transform:  translateY(-10%);
 
   &__content {
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: auto;
     background: linear-gradient(to right, rgba(47, 127, 145, 0.114), rgba(148, 167, 168, 0.174)) ;
-    box-shadow: 0 8px 32px 0 rgba(32, 41, 133, 0.37);
-    border-radius: 10px;
+   
+    border-radius:2rem;
     color: white;
-    padding:var(--standard-padding);
+    padding:var(--small-padding);
+
+    & h5 {
+       color: var(--primary-text-color);
+         font-family: "Playfair Display", serif;
+         font-weight: 500;
+         margin-top: var(--small-padding);
+    }
+
+    & p {
+      color:var(--secondary-text-color);
+    }
+   
   }
+  
+
+
 }
 
 .popup {
     &__img{
         width: 100%;
+        margin-top: var(--small-padding);
     }
+}
+
+.translate, .translate-long {
+  transform: translateY(30%);
+}
+
+
+
+
+@media only screen and (min-width: 60rem) {
+  .modal__content {
+    padding: var(--standard-padding);
+  }
 }

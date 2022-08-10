@@ -3,22 +3,41 @@
     font-family: "Playfair Display", serif;
     font-weight: 500;
     text-align: center;
+    margin-bottom: var(--small-padding);
   }
 
   &__icons {
     display: flex;
     flex-direction: column;
-
+  
   }
 
   &__video {
     cursor: pointer;
+
+    & > * {
+      margin-top: var(--small-padding);
+    }
+  }
+
+  &__button {
+      margin-top: var(--small-padding);
+  }
+
+  &__button > *:not(:last-child) {
+    margin-right:var(--small-padding);
+ 
+  }
+
+  &__description {
+    margin-top: var(--small-padding);
+    margin-bottom: var(--small-padding);
   }
 }
 .video {
   display: grid;
   gap: var(--small-padding);
-
+  position: relative;
 }
 
 
@@ -36,8 +55,7 @@
 @media only screen and (min-width: 60rem) {
   .video {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
+    grid-template-rows:1fr 0.5fr;
     &--1 {
       grid-column: 1 / span 4;
       grid-row: 1 / span 1;
@@ -56,3 +74,6 @@
 
  
 }
+
+ 
+

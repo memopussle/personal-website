@@ -1,0 +1,70 @@
+.experience {
+  margin-top: var(--section-margin);
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: var(--primary-text-color);
+  }
+
+  &__text {
+    &--1 {
+      & p {
+        margin-top: 0.5rem;
+      }
+    }
+
+    &--2 {
+        position: relative;
+    }
+  }
+
+  &__icon {
+    &--1 {
+      position: absolute;
+      left: -4.4rem;
+      top: -0.5rem;
+    }
+     &--2 {
+      position: absolute;
+      left: -4.4rem;
+      bottom: 65%;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1000;
+    margin-left: var(--small-padding);
+    margin-top: var(--standard-padding);
+    &::before {
+      content: "";
+      width: 0.5%;
+      height: 95%;
+      position: absolute;
+      background: linear-gradient(var(--primary-purple), var(--primary-blue));
+      box-shadow: 4px 15px 21px 5px rgba(33, 211, 231, 0.281);
+      left: -2rem;
+      top: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  .experience {
+&__wrapper {
+    &::before {
+      width: 0.2%;
+    }
+  }
+
+  &__icon {
+     &--2 {
+   
+      left: -4.4rem;
+      bottom: 58%;
+    }
+  }
+  }
+  
+}

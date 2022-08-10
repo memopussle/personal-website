@@ -27,12 +27,13 @@
 
 
   &__button {
-    margin-right: var(--small-padding);
     margin-bottom: var(--small-padding);
   }
 
   &__download {
     color: var(--primary-red-orange);
+    margin-top: 1.5rem;
+       margin-left: var(--small-padding);
 
     &:hover {
         color: var(--primary-red-orange);

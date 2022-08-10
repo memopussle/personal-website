@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Nav.scss";
 import { BiMenuAltLeft } from "react-icons/bi";
+import { gsap } from "gsap";
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -10,6 +11,44 @@ const Nav = () => {
     console.log(navOpen)
   }
 
+
+  //GSAP
+  const navSmallRef = useRef();
+  const navFullRef = useRef();
+  const navButtonRef = useRef();
+
+  //animating after rendering
+  useEffect(() => {
+    gsap.from(navSmallRef.current, 0.5, {
+      x: "-100%",
+      ease: "Expo.easeInOut",
+    });
+
+     gsap.from(
+       navFullRef.current,
+       0.5,
+       {
+         delay: 1,
+         opacity: 0,
+         x: "-20",
+         ease: 'Expo.easeInOut',
+       },
+       0.08
+    );
+    
+     gsap.from(
+       navButtonRef.current,
+       0.5,
+       {
+         delay: 1.2,
+         opacity: 0,
+         x: "-20",
+         ease: "Expo.easeInOut",
+       },
+       0.08
+     );
+  });
+
   return (
     <header>
       <div className="container flex space-between nav">
@@ -17,46 +56,56 @@ const Nav = () => {
           <BiMenuAltLeft size={40} />
         </button>
 
-        <ul className="nav__medium">
+        <ul className="nav__medium" ref={navFullRef}>
           <li>
-            <p onClick={() => window.location.replace("/#home")}>HOME</p>
+            <a href="#home" target="_blank" rel="noopener">
+              HOME
+            </a>
           </li>
           <li>
-            <p onClick={() => window.location.replace("/#about")}>ABOUT</p>
+            <a href="#about" target="_blank" rel="noopener">
+              ABOUT
+            </a>
           </li>
           <li>
-            <p onClick={() => window.location.replace("/#projects")}>
+            <a href="#projects" target="_blank" rel="noopener">
               PROJECTS
-            </p>
+            </a>
           </li>
           <li>
-            <p onClick={() => window.location.replace("/#contact")}>CONTACT</p>
+            <a href="#contact" target="_blank" rel="noopener">
+              CONTACT
+            </a>
           </li>
         </ul>
         {navOpen === true && (
-          <ul className="nav__small">
+          <ul className="nav__small" ref={navSmallRef}>
             <li>
-              <p onClick={() => window.location.replace("/#home")}>HOME</p>
+              <a href="#home" target="_blank" rel="noopener">
+                HOME
+              </a>
             </li>
             <li>
-              <p onClick={() => window.location.replace("/#about")}>ABOUT</p>
+              <a href="#about" target="_blank" rel="noopener">
+                ABOUT
+              </a>
             </li>
             <li>
-              <p onClick={() => window.location.replace("/#projects")}>
-                PROJECTS
-              </p>
+              <a href="#projects" target="_blank" rel="noopener">
+               PROJECTS
+              </a>
             </li>
             <li>
-              <p onClick={() => window.location.replace("/#contact")}>
-                CONTACT
-              </p>
+              <p>CONTACT</p>
             </li>
           </ul>
         )}
 
         <ul>
           <li>
-            <button className="normal-button">CONTACT ME</button>
+            <button className="normal-button" ref={navButtonRef}>
+              CONTACT ME
+            </button>
           </li>
         </ul>
       </div>

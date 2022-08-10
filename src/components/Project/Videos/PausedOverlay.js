@@ -3,8 +3,6 @@ import travelImg from "../../../img/travel-website.png";
 import clothingShop from "../../../img/clothing-shop.png";
 import cryptoWebsite from "../../../img/crypto-website.png";
 export const PausedOverlay1 = () => (
-
- 
   <div>
     <img
       src={travelImg}
@@ -13,11 +11,11 @@ export const PausedOverlay1 = () => (
         /* Thumbnail image expands to cover the player */
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 96%;
         top: 0;
         left: 0;
         object-fit: cover;
-        filter: brightness(40%);
+        filter: brightness(60%);
       `}
     />
     <div
@@ -44,11 +42,11 @@ export const PausedOverlay2 = () => (
         /* Thumbnail image expands to cover the player */
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 92%;
         top: 0;
         left: 0;
         object-fit: cover;
-        filter: brightness(30%);
+        filter: brightness(60%);
       `}
     />
     <div
@@ -75,7 +73,7 @@ export const PausedOverlay3 = () => (
         /* Thumbnail image expands to cover the player */
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 92%;
         top: 0;
         left: 0;
         object-fit: cover;

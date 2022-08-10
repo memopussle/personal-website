@@ -11,14 +11,16 @@ import video3 from "../../../img/crypto-app.mp4";
 import "../Project.scss";
 import { FaGithub, FaYoutube, FaTable } from "react-icons/fa";
 import Popup from "../Popup/Popup";
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
-    const [popUp, setPopUp] = useState(false);
+  const [popUp, setPopUp] = useState(false);
+
   const toggle = () => {
     setPopUp(!popUp);
-    console.log(popUp)
-  }
+  };
+
   return (
     <>
       {popUp === true && <Popup popUp={popUp} setPopUp={setPopUp} />}
@@ -26,73 +28,167 @@ const Projects = () => {
         <h3 className="project__title primary-text ">Selected Projects</h3>
         <div className="video">
           <div className="video--1">
-            <HoverVideoPlayer
-              videoSrc={video1}
-              pausedOverlay={<PausedOverlay1 />}
-              loadingOverlay={<LoadingOverlay />}
-              onClick={toggle}
-              className="project__video"
-            />
-
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            <Link to="/project1">
+              <HoverVideoPlayer
+                videoSrc={video1}
+                pausedOverlay={<PausedOverlay1 />}
+                loadingOverlay={<LoadingOverlay />}
+                onClick={toggle}
+                className="project__video"
+              />
+            </Link>
+            <p className="project__description">
+              Tui Meke NZ: A travel website that offers special tours in
+              Aotearoa and allows users to search for attractions, hotels and
+              restaurants anywhere in the world.
             </p>
-            <div className="project__icons">
-              <button className="normal-button" onClick={toggle}>
-                SEE MORE
-              </button>
 
-              <div>
-                <button className="transparent-button">
+            <div className="project__icons">
+              <Link to="/project1">
+                <button className="normal-button" onClick={toggle}>
+                  SEE MORE
+                </button>
+              </Link>
+              <div className="project__button">
+                <a
+                  href="https://github.com/memopussle/client_tumeke_nz"
+                  rel="noopener"
+                  target="_blank"
+                >
                   <FaGithub
                     size={30}
                     style={{ fill: "url(#more-blue-gradient)" }}
                   />
-                </button>
-                <button className="transparent-button">
+                </a>
+                <a
+                  href="https://github.com/memopussle/client_tumeke_nz"
+                  rel="noopener"
+                  target="_blank"
+                >
                   <FaYoutube
                     size={30}
                     style={{ fill: "url(#more-purple-gradient)" }}
                   />
-                </button>
-                <button className="transparent-button">
+                </a>
+                <a
+                  href="https://clothing-shop-overthesea.herokuapp.com/"
+                  rel="noopener"
+                  target="_blank"
+                >
                   <FaTable
                     size={30}
                     style={{ fill: "url(#purple-gradient)" }}
                   />
-                </button>
+                </a>
               </div>
             </div>
           </div>
+
           <div className="video--2">
-            <HoverVideoPlayer
-              videoSrc={video2}
-              pausedOverlay={<PausedOverlay2 />}
-              loadingOverlay={<LoadingOverlay />}
-              className="project__video"
-            />
-            <div>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-              </p>
+            <Link to="/project2">
+              <HoverVideoPlayer
+                videoSrc={video2}
+                pausedOverlay={<PausedOverlay2 />}
+                loadingOverlay={<LoadingOverlay />}
+                className="project__video"
+                onClick={toggle}
+              />
+            </Link>
+
+            <p className="project__description">
+              OverTheSea is an E-commerce clothing store specialising in selling
+              sustainable women's clothes. It is a fully functioning application
+              that displays products and allows users to purchase online.
+            </p>
+
+            <div className="project__icons">
+              <Link to="/project2">
+                <button className="normal-button" onClick={toggle}>
+                  SEE MORE
+                </button>
+              </Link>
+
+              <div className="project__button">
+                <a
+                  href="https://github.com/memopussle/Clothing-shop-react"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <FaGithub
+                    size={30}
+                    style={{ fill: "url(#more-blue-gradient)" }}
+                  />
+                </a>
+                <a
+                  href="https://overthesea-shop-qgqll239p-memopussle.vercel.app/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <FaYoutube
+                    size={30}
+                    style={{ fill: "url(#more-purple-gradient)" }}
+                  />
+                </a>
+                <a href="#" rel="noopener" target="_blank">
+                  <FaTable
+                    size={30}
+                    style={{ fill: "url(#purple-gradient)" }}
+                  />
+                </a>
+              </div>
             </div>
           </div>
+
           <div className="video--3">
-            <HoverVideoPlayer
-              videoSrc={video3}
-              pausedOverlay={<PausedOverlay3 />}
-              loadingOverlay={<LoadingOverlay />}
-              className="project__video"
-            />
-            <div>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab
-              </p>
+            <Link to="/project3">
+              <HoverVideoPlayer
+                videoSrc={video3}
+                pausedOverlay={<PausedOverlay3 />}
+                loadingOverlay={<LoadingOverlay />}
+                className="project__video"
+                onClick={toggle}
+              />
+            </Link>
+
+            <p className="project__description">
+              KryptoX is a website for crypto enthusiasts - it displays all of
+              the latest information about crypto, trending NFTs and daily News
+              from the world of crypto.
+            </p>
+            <div className="project__icons">
+              <Link to="/project3">
+                <button className="normal-button" onClick={toggle}>
+                  SEE MORE
+                </button>
+              </Link>
+              <div className="project__button">
+                <a
+                  href="https://github.com/memopussle/cryptoX-React"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <FaGithub
+                    size={30}
+                    style={{ fill: "url(#more-blue-gradient)" }}
+                  />
+                </a>
+                <a href="#" rel="noopener" target="_blank">
+                  <FaYoutube
+                    size={30}
+                    style={{ fill: "url(#more-purple-gradient)" }}
+                  />
+                </a>
+                <a
+                  href="https://luxury-seahorse-505c6e.netlify.app/"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <FaTable
+                    size={30}
+                    style={{ fill: "url(#purple-gradient)" }}
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
