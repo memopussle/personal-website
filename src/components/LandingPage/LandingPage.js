@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { gsap } from "gsap";
 import GradientSvg from "./GradientSvg";
+import { Link } from "react-scroll";
 
 const LandingPage = () => {
   const landingTextRef = useRef();
@@ -60,16 +61,26 @@ const LandingPage = () => {
             <span className="landing__name">Thu Giang </span>
           </h1>
           <p className=" small-margin" ref={landingSubRef}>
-            <span className="primary-text">A highly motivated web developer</span>{" "}
-           with a passion for all things coding and an eye for design.
+            <span className="primary-text">
+              A highly motivated web developer
+            </span>{" "}
+            with a passion for all things coding and an eye for design.
           </p>
           <div>
-            <button
-              className="normal-button small-margin landing__button"
-              ref={landingButtonRef}
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
             >
-              SEE MY WORK
-            </button>
+              <button
+                className="normal-button small-margin landing__button"
+                ref={landingButtonRef}
+              >
+                SEE MY WORK
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -116,7 +127,8 @@ const LandingPage = () => {
             >
               <AiFillGithub
                 size={35}
-                style={{ fill: "url(#more-purple-gradient)" }}/>
+                style={{ fill: "url(#more-purple-gradient)" }}
+              />
             </a>
           </div>
         </div>

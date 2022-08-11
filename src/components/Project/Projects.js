@@ -1,16 +1,16 @@
-import video1 from "../../../img/travelwebsite.mp4";
+import video1 from "../../img/travelwebsite.mp4";
 import HoverVideoPlayer from "react-hover-video-player";
 import {
   PausedOverlay1,
   PausedOverlay2,
   PausedOverlay3,
-} from "./PausedOverlay";
-import LoadingOverlay from "./LoadingOverlay";
-import video2 from "../../../img/overthesea.mp4";
-import video3 from "../../../img/crypto-app.mp4";
-import "../Project.scss";
+} from "./Videos/PausedOverlay";
+import LoadingOverlay from "./Videos/LoadingOverlay";
+import video2 from "../../img/overthesea.mp4";
+import video3 from "../../img/crypto-app.mp4";
+import "./Project.scss";
 import { FaGithub, FaYoutube, FaTable } from "react-icons/fa";
-import Popup from "../Popup/Popup";
+import Popup from "./Popup/Popup";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const Projects = () => {
   };
 
   return (
-    <>
+    <div id="projects">
       {popUp === true && <Popup popUp={popUp} setPopUp={setPopUp} />}
       <div className="container section-margin">
         <h3 className="project__title primary-text ">Selected Projects</h3>
@@ -201,7 +201,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

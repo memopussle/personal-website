@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Nav.scss";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { gsap } from "gsap";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -75,53 +76,110 @@ const Nav = () => {
 
         <ul className="nav__medium" ref={navFullRef}>
           <li>
-            <a href="#home" target="_blank" rel="noopener">
+            <Link
+              to="landingpage"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               HOME
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" target="_blank" rel="noopener">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               ABOUT
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#projects" target="_blank" rel="noopener">
+             <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               PROJECTS
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" target="_blank" rel="noopener">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
         {navOpen === true && (
           <ul className="nav__small" ref={navSmallRef}>
             <li>
-              <a href="#home" target="_blank" rel="noopener">
+              <Link
+                to="landingpage"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" target="_blank" rel="noopener">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
                 ABOUT
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#projects" target="_blank" rel="noopener">
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
                 PROJECTS
-              </a>
+              </Link>
             </li>
             <li>
-              <p>CONTACT</p>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                CONTACT
+              </Link>
             </li>
           </ul>
         )}
 
         <ul>
           <li>
-            <button className="normal-button" ref={navButtonRef} onClick={() => window.location = 'mailto:xanhtham.cuc@gmail.com'}   rel="noreferrer"
-                  target="_blank">
+            <button
+              className="normal-button"
+              ref={navButtonRef}
+              onClick={() =>
+                (window.location = "mailto:xanhtham.cuc@gmail.com")
+              }
+              rel="noreferrer"
+              target="_blank"
+            >
               CONTACT ME
             </button>
           </li>

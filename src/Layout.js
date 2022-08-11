@@ -8,6 +8,7 @@ import {
   Contact,
   About,
   LandingPage,
+
 } from "./components/index";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -123,6 +124,7 @@ const Layout = () => {
       <div ref={skillRef}>
         <Skills />
       </div>
+
       <div ref={projectRef}>
         <Projects />
       </div>
