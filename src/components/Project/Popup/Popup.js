@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import "./Popup.scss";
 import img1 from "../../../img/travel-thumbnail.png";
@@ -52,7 +52,7 @@ const Popup = ({ popUp, setPopUp }) => {
             <div className="project__button">
               <a
                 href="https://github.com/memopussle/client_tumeke_nz"
-                rel="noopener"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaGithub
@@ -61,8 +61,8 @@ const Popup = ({ popUp, setPopUp }) => {
                 />
               </a>
               <a
-                href="https://github.com/memopussle/client_tumeke_nz"
-                rel="noopener"
+                href="https://www.loom.com/share/fc8f98f56a0a47d38568546090dacffb"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaYoutube
@@ -72,7 +72,7 @@ const Popup = ({ popUp, setPopUp }) => {
               </a>
               <a
                 href="https://clothing-shop-overthesea.herokuapp.com/"
-                rel="noopener"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaTable size={30} style={{ fill: "url(#purple-gradient)" }} />
@@ -94,7 +94,7 @@ const Popup = ({ popUp, setPopUp }) => {
                 </Link>
               </button>
             </div>
-            <img src={img2} alt="first project" className="popup__img" />
+            <img src={img2} alt="second project" className="popup__img" />
             <h5>Built with</h5>
             <p>
               Technogies that I used to build this application: Nextjs, Sanity,
@@ -114,8 +114,8 @@ const Popup = ({ popUp, setPopUp }) => {
 
             <div className="project__button">
               <a
-                href="https://github.com/memopussle/client_tumeke_nz"
-                rel="noopener"
+                href="https://github.com/memopussle/Clothing-shop-react"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaGithub
@@ -124,8 +124,8 @@ const Popup = ({ popUp, setPopUp }) => {
                 />
               </a>
               <a
-                href="https://github.com/memopussle/client_tumeke_nz"
-                rel="noopener"
+                href="https://www.loom.com/share/713e2c7d96564bbfbe6f9d39c2e08f83"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaYoutube
@@ -134,8 +134,8 @@ const Popup = ({ popUp, setPopUp }) => {
                 />
               </a>
               <a
-                href="https://clothing-shop-overthesea.herokuapp.com/"
-                rel="noopener"
+                href="https://github.com/memopussle/Clothing-shop-react"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaTable size={30} style={{ fill: "url(#purple-gradient)" }} />
@@ -180,8 +180,8 @@ const Popup = ({ popUp, setPopUp }) => {
 
             <div className="project__button">
               <a
-                href="https://github.com/memopussle/client_tumeke_nz"
-                rel="noopener"
+                href="https://github.com/memopussle/cryptoX-React"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaGithub
@@ -190,8 +190,8 @@ const Popup = ({ popUp, setPopUp }) => {
                 />
               </a>
               <a
-                href="https://github.com/memopussle/client_tumeke_nz"
-                rel="noopener"
+                href="https://www.loom.com/share/0e5404b67872492c9c631691f5969651"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaYoutube
@@ -200,8 +200,8 @@ const Popup = ({ popUp, setPopUp }) => {
                 />
               </a>
               <a
-                href="https://clothing-shop-overthesea.herokuapp.com/"
-                rel="noopener"
+                href="https://luxury-seahorse-505c6e.netlify.app/"
+              rel="noreferrer"
                 target="_blank"
               >
                 <FaTable size={30} style={{ fill: "url(#purple-gradient)" }} />

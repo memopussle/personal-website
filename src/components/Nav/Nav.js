@@ -16,6 +16,7 @@ const Nav = () => {
   const navSmallRef = useRef();
   const navFullRef = useRef();
   const navButtonRef = useRef();
+  const menuRef = useRef();
 
   //animating after rendering
   useEffect(() => {
@@ -23,6 +24,7 @@ const Nav = () => {
       x: "-100%",
       ease: "Expo.easeInOut",
     });
+
 
      gsap.from(
        navFullRef.current,
@@ -46,13 +48,28 @@ const Nav = () => {
          ease: "Expo.easeInOut",
        },
        0.08
+    );
+     gsap.from(
+      menuRef.current,
+       0.5,
+       {
+         delay: 0.8,
+         opacity: 0,
+         x: "-20",
+         ease: "Expo.easeInOut",
+       },
+       0.08
      );
   });
 
   return (
     <header>
       <div className="container flex space-between nav">
-        <button className="transparent-button nav__menu" onClick={handleClick}>
+        <button
+          className="transparent-button nav__menu"
+          onClick={handleClick}
+          ref={menuRef}
+        >
           <BiMenuAltLeft size={40} />
         </button>
 
@@ -92,7 +109,7 @@ const Nav = () => {
             </li>
             <li>
               <a href="#projects" target="_blank" rel="noopener">
-               PROJECTS
+                PROJECTS
               </a>
             </li>
             <li>
@@ -103,7 +120,8 @@ const Nav = () => {
 
         <ul>
           <li>
-            <button className="normal-button" ref={navButtonRef}>
+            <button className="normal-button" ref={navButtonRef} onClick={() => window.location = 'mailto:xanhtham.cuc@gmail.com'}   rel="noreferrer"
+                  target="_blank">
               CONTACT ME
             </button>
           </li>

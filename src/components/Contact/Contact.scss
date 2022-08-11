@@ -1,0 +1,81 @@
+.contact {
+  padding-bottom: var(--standard-padding);
+  &__title {
+    text-align: center;
+    font-family: var(--secondary-font);
+    margin-top: var(--section-margin);
+    font-weight: 500;
+    color: var(--primary-text-color);
+  }
+
+  &__details {
+    margin-top: var(--small-padding);
+    text-align: center;
+
+    & > * {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: rgba(76, 76, 76, 0.103);
+
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border: 1px solid rgba(67, 67, 67, 0.205);
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+      cursor: pointer;
+      &:hover {
+        color: var(--primary-text-color);
+        box-shadow: 0 0px 32px 0 rgba(245, 12, 237, 0.288);
+      }
+    }
+  }
+
+  &__icons {
+    text-align: center;
+    & > * {
+      margin-right: var(--small-padding);
+    }
+  }
+}
+
+.email {
+  &__title {
+    text-align: center;
+    font-family: var(--secondary-font);
+    margin-top: var(--small-padding);
+    font-weight: 500;
+  }
+
+  &__form {
+    font-family: inherit;
+    
+    & > *:not(button) {
+      display: block;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    & input, & textarea {
+      padding: 0.5rem;
+      outline: none;
+    }
+
+    &__message {
+        margin-top: var(--small-padding);
+        text-align: center;
+     
+    }
+  }
+}
+@media only screen and (min-width: 60rem) {
+    .email__form {
+        display: flex;
+       align-items: center;
+        flex-direction: column;
+        & > *:not(button) {
+           width: 50%;
+        }
+
+     
+    }
+}

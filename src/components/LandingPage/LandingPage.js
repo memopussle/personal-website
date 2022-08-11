@@ -60,9 +60,8 @@ const LandingPage = () => {
             <span className="landing__name">Thu Giang </span>
           </h1>
           <p className=" small-margin" ref={landingSubRef}>
-            <span className="primary-text">Lorem ipsum dolor sit amet</span>
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
+            <span className="primary-text">A highly motivated web developer</span>{" "}
+           with a passion for all things coding and an eye for design.
           </p>
           <div>
             <button
@@ -83,7 +82,7 @@ const LandingPage = () => {
             <a
               href="https://www.linkedin.com/in/thu-giang-20b2111ba/"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               <AiFillLinkedin
                 size={35}
@@ -93,8 +92,7 @@ const LandingPage = () => {
             <a
               href="https://medium.com/@xanhtham.cuc"
               target="_blank"
-              rel="noopener"
-              
+              rel="noreferrer"
             >
               <AiFillMediumCircle
                 size={35}
@@ -104,8 +102,7 @@ const LandingPage = () => {
             <a
               href="https://twitter.com/memopussle"
               target="_blank"
-              rel="noopener"
-             
+              rel="noreferrer"
             >
               <AiFillTwitterCircle
                 size={35}
@@ -115,13 +112,11 @@ const LandingPage = () => {
             <a
               href="https://github.com/memopussle"
               target="_blank"
-              rel="noopener"
-             
+              rel="noreferrer"
             >
               <AiFillGithub
                 size={35}
-                style={{ fill: "url(#more-purple-gradient)" }}
-              />
+                style={{ fill: "url(#more-purple-gradient)" }}/>
             </a>
           </div>
         </div>

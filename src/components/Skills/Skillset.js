@@ -32,10 +32,9 @@ const Skillset = ({ currentTab, setCurrentTab }) => {
           size={150}
           style={{ fill: "url(#more-blue-gradient)" }}
         />,
-        <GrReactjs size={150} style={{ fill: "url(#all-purple-gradient)" }} />,
       ],
       content:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias",
+        "I started studying web development since October 2021. Using online resources, I spent the next 6 months gaining a deep understanding of HTML, CSS and JavaScript. I also began learning Jquery, Ajax and DOM before beginning my study at Developers Institute.",
     },
     {
       id: 2,
@@ -48,14 +47,15 @@ const Skillset = ({ currentTab, setCurrentTab }) => {
           size={150}
           style={{ fill: "url(#more-purple-gradient)" }}
         />,
+        <GrReactjs size={150} style={{ fill: "url(#all-purple-gradient)" }} />,
         <TbApi size={150} style={{ fill: "url(#blue-gradient)" }} />,
       ],
       content:
-        " Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus",
+        "I'm currently in the middle of my Diploma in Web Development and Design at Developers Institute. Right now, my course is focusing on React, Nodejs, Express, MongoDB and REST APIs. I'm also developing my skills in Nextjs and React independently.",
     },
     {
       id: 4,
-      button: "ADDS-ON",
+      button: "EXTRA SKILLS",
       icons: [
         <AiFillGithub
           size={150}
@@ -72,13 +72,16 @@ const Skillset = ({ currentTab, setCurrentTab }) => {
         <SiAntdesign size={150} style={{ fill: "url(#purple-gradient)" }} />,
         <SiSass size={150} style={{ fill: "url(#more-blue-gradient)" }} />,
       ],
-      content: "Contenido de tab 4.",
+      content: "In addition to previous mentions, I'm also competent in the use of frameworks/libraries including Bootstrap, MaterialUI, Antd Design and Sass. There is also a lot I can still learn about Git, therefore I am continuously studying it as I go.",
     },
   ];
 
   const handleTabClick = (e) => {
     setCurrentTab(e.target.id);
   };
+
+ 
+
 
   return (
     <div>
@@ -98,7 +101,7 @@ const Skillset = ({ currentTab, setCurrentTab }) => {
       </div>
       <div>
         {tabs.map((tab, i) => (
-          <div key={i}>
+          <div key={i} >
             {currentTab === `${tab.id}` && (
               <div className="skill__content">
                 <p>{tab.content}</p>

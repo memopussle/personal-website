@@ -10,7 +10,7 @@ const Experience = () => {
       <div className="flex">
         <h3 className="experience__title">Experience</h3>
         <a href={cv} download className="landing__download">
-          <AiOutlineDownload size={35} />
+          <AiOutlineDownload size={35} style={{ fill: "#fc6714" }} />
         </a>
       </div>
       <div className="experience__wrapper">
@@ -45,6 +45,7 @@ const Experience = () => {
             size={80}
             className="experience__icon--2"
             style={{ fill: "url(#more-purple-gradient)" }}
+            
           />
           <h5 className="secondary-font font-weight-normal small-margin">
             <span className="primary-text">Financial Crime</span>{" "}

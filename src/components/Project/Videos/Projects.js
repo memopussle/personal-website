@@ -52,7 +52,7 @@ const Projects = () => {
               <div className="project__button">
                 <a
                   href="https://github.com/memopussle/client_tumeke_nz"
-                  rel="noopener"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <FaGithub
@@ -61,8 +61,8 @@ const Projects = () => {
                   />
                 </a>
                 <a
-                  href="https://github.com/memopussle/client_tumeke_nz"
-                  rel="noopener"
+                  href="https://www.loom.com/share/fc8f98f56a0a47d38568546090dacffb"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <FaYoutube
@@ -72,7 +72,7 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://clothing-shop-overthesea.herokuapp.com/"
-                  rel="noopener"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <FaTable
@@ -111,7 +111,7 @@ const Projects = () => {
               <div className="project__button">
                 <a
                   href="https://github.com/memopussle/Clothing-shop-react"
-                  rel="noopener"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <FaGithub
@@ -120,8 +120,8 @@ const Projects = () => {
                   />
                 </a>
                 <a
-                  href="https://overthesea-shop-qgqll239p-memopussle.vercel.app/"
-                  rel="noopener"
+                  href="https://www.loom.com/share/713e2c7d96564bbfbe6f9d39c2e08f83"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <FaYoutube
@@ -129,7 +129,11 @@ const Projects = () => {
                     style={{ fill: "url(#more-purple-gradient)" }}
                   />
                 </a>
-                <a href="#" rel="noopener" target="_blank">
+                <a
+                  href="https://github.com/memopussle/Clothing-shop-react"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <FaTable
                     size={30}
                     style={{ fill: "url(#purple-gradient)" }}
@@ -164,7 +168,7 @@ const Projects = () => {
               <div className="project__button">
                 <a
                   href="https://github.com/memopussle/cryptoX-React"
-                  rel="noopener"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <FaGithub
@@ -172,7 +176,11 @@ const Projects = () => {
                     style={{ fill: "url(#more-blue-gradient)" }}
                   />
                 </a>
-                <a href="#" rel="noopener" target="_blank">
+                <a
+                  href="https://www.loom.com/share/0e5404b67872492c9c631691f5969651"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <FaYoutube
                     size={30}
                     style={{ fill: "url(#more-purple-gradient)" }}
@@ -180,7 +188,7 @@ const Projects = () => {
                 </a>
                 <a
                   href="https://luxury-seahorse-505c6e.netlify.app/"
-                  rel="noopener"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <FaTable
