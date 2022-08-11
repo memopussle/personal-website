@@ -130,7 +130,7 @@ const Projects = () => {
                   />
                 </a>
                 <a
-                  href="https://github.com/memopussle/Clothing-shop-react"
+                  href="https://overthesea-shop-qgqll239p-memopussle.vercel.app/"
                   rel="noreferrer"
                   target="_blank"
                 >

@@ -52,7 +52,7 @@ const Popup = ({ popUp, setPopUp }) => {
             <div className="project__button">
               <a
                 href="https://github.com/memopussle/client_tumeke_nz"
-              rel="noreferrer"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaGithub
@@ -62,7 +62,7 @@ const Popup = ({ popUp, setPopUp }) => {
               </a>
               <a
                 href="https://www.loom.com/share/fc8f98f56a0a47d38568546090dacffb"
-              rel="noreferrer"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaYoutube
@@ -72,7 +72,7 @@ const Popup = ({ popUp, setPopUp }) => {
               </a>
               <a
                 href="https://clothing-shop-overthesea.herokuapp.com/"
-              rel="noreferrer"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaTable size={30} style={{ fill: "url(#purple-gradient)" }} />
@@ -115,7 +115,7 @@ const Popup = ({ popUp, setPopUp }) => {
             <div className="project__button">
               <a
                 href="https://github.com/memopussle/Clothing-shop-react"
-              rel="noreferrer"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaGithub
@@ -125,7 +125,7 @@ const Popup = ({ popUp, setPopUp }) => {
               </a>
               <a
                 href="https://www.loom.com/share/713e2c7d96564bbfbe6f9d39c2e08f83"
-              rel="noreferrer"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaYoutube
@@ -134,8 +134,8 @@ const Popup = ({ popUp, setPopUp }) => {
                 />
               </a>
               <a
-                href="https://github.com/memopussle/Clothing-shop-react"
-              rel="noreferrer"
+                href="https://overthesea-shop-qgqll239p-memopussle.vercel.app/"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaTable size={30} style={{ fill: "url(#purple-gradient)" }} />
@@ -157,7 +157,7 @@ const Popup = ({ popUp, setPopUp }) => {
                 </Link>
               </button>
             </div>
-            <img src={img3} alt="first project" className="popup__img" />
+            <img src={img3} alt="third project" className="popup__img" />
             <h5>Built with</h5>
             <p>
               I primarily utilised these technologies to build this project:
@@ -181,7 +181,7 @@ const Popup = ({ popUp, setPopUp }) => {
             <div className="project__button">
               <a
                 href="https://github.com/memopussle/cryptoX-React"
-              rel="noreferrer"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaGithub
@@ -191,7 +191,7 @@ const Popup = ({ popUp, setPopUp }) => {
               </a>
               <a
                 href="https://www.loom.com/share/0e5404b67872492c9c631691f5969651"
-              rel="noreferrer"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaYoutube
@@ -201,7 +201,7 @@ const Popup = ({ popUp, setPopUp }) => {
               </a>
               <a
                 href="https://luxury-seahorse-505c6e.netlify.app/"
-              rel="noreferrer"
+                rel="noreferrer"
                 target="_blank"
               >
                 <FaTable size={30} style={{ fill: "url(#purple-gradient)" }} />
