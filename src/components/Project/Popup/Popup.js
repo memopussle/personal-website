@@ -83,7 +83,7 @@ const Popup = ({ popUp, setPopUp }) => {
       )}
 
       {location.pathname === "/project2" && (
-        <div className="modal translate">
+        <div className="modal ">
           <div className="modal__content ">
             <div className="flex space-between">
               <h4 className="secondary-font font-weight-normal">OverTheSea</h4>
@@ -146,7 +146,7 @@ const Popup = ({ popUp, setPopUp }) => {
       )}
 
       {location.pathname === "/project3" && (
-        <div className="modal translate">
+        <div className="modal">
           <div className="modal__content ">
             <div className="flex space-between">
               <h4 className="secondary-font font-weight-normal">KryptoX</h4>

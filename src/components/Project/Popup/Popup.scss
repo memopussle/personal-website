@@ -14,8 +14,8 @@
     position: absolute;
     width: 70%;
     height: auto;
-    background: linear-gradient(to right, rgba(11, 66, 105, 0.26), rgba(104, 37, 101, 0.211)) ;
-   
+    background: linear-gradient(to right, rgba(6, 30, 48, 0.414), rgba(58, 20, 56, 0.381)) ;
+    z-index: 2000;
     border-radius:2rem;
     color: white;
     padding:var(--small-padding);
@@ -42,10 +42,6 @@
         width: 100%;
         margin-top: var(--small-padding);
     }
-}
-
-.translate, .translate-long {
-  transform: translateY(30%);
 }
 
 
