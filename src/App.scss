@@ -97,7 +97,8 @@ h5 {
 p,
 button,
 a,
-li,label {
+li,
+label {
   font-size: clamp(1.1rem, 1.3vw, 1.2rem);
 }
 
@@ -138,6 +139,10 @@ a {
   transition: all 0.3s ease;
   color: var(--primary-text-color);
   cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .normal-button {
@@ -147,10 +152,6 @@ a {
     var(--primary-red-orange)
   );
   border: none;
-
-  &:focus {
-    outline: 0;
-  }
 
   @include button;
 }
