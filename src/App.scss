@@ -111,6 +111,10 @@ a {
   &:hover {
     color: var(--primary-text-color) !important;
   }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .flex {
@@ -143,6 +147,10 @@ a {
     var(--primary-red-orange)
   );
   border: none;
+
+  &:focus {
+    outline: 0;
+  }
 
   @include button;
 }
