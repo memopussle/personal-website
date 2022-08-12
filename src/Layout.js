@@ -42,18 +42,19 @@ const Layout = () => {
     gsap.fromTo(
       element,
       {
-        y: -200,
+        y: -50,
+        opacity: 0,
       },
       {
         ease: "power1.out",
-
         y: 0,
         duration: 3,
+        opacity: 1,
         scrollTrigger: {
           trigger: element,
           scrub: true,
-          start: "top center",
-          end: "bottom top",
+          start: "top bottom",
+          end: "top top",
         },
       }
     );
@@ -65,12 +66,15 @@ const Layout = () => {
         y: -50,
       },
       {
-        duration: 1,
+        duration: 2,
         opacity: 1,
         y: 0,
         ease: "Expo.easeInOut",
         scrollTrigger: {
           trigger: skillRef.current,
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
         },
       }
     );

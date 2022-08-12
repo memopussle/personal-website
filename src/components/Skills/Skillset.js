@@ -34,7 +34,7 @@ const Skillset = ({ currentTab, setCurrentTab }) => {
         />,
       ],
       content:
-        "I started studying web development since October 2021. Using online resources, I spent the next 6 months gaining a deep understanding of HTML, CSS and JavaScript. I also began learning Jquery, Ajax and DOM before beginning my study at Developers Institute.",
+        "I started studying web development since October 2021. Using online resources, I spent the next 6 months gaining a deep understanding of HTML, CSS and JavaScript. I also began learning Jquery, Ajax and DOM before beginning my full-time study at Developers Institute.",
     },
     {
       id: 2,

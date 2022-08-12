@@ -55,7 +55,7 @@ const LandingPage = () => {
   return (
     <section id="home">
       <div className="container">
-        <div className="landing__text flex section-margin">
+        <div className="landing__text flex">
           <h1 ref={landingTextRef}>
             <span className="landing__before-name primary-text">I'm</span>{" "}
             <span className="landing__name">Thu Giang </span>
