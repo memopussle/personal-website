@@ -8,7 +8,6 @@ import {
   Contact,
   About,
   LandingPage,
-
 } from "./components/index";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -43,12 +42,11 @@ const Layout = () => {
     gsap.fromTo(
       element,
       {
-        opacity: 0,
         y: -200,
       },
       {
         ease: "power1.out",
-        opacity: 1,
+
         y: 0,
         duration: 3,
         scrollTrigger: {
