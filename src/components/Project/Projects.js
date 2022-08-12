@@ -61,7 +61,7 @@ const Projects = () => {
                   />
                 </a>
                 <a
-                  href="https://www.loom.com/share/fc8f98f56a0a47d38568546090dacffb"
+                  href="https://www.loom.com/share/f4cf422c80a543d388acce141c295e4a"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -120,7 +120,7 @@ const Projects = () => {
                   />
                 </a>
                 <a
-                  href="https://www.loom.com/share/713e2c7d96564bbfbe6f9d39c2e08f83"
+                  href="https://www.loom.com/share/74168b78f1eb4c699113bf4ab084e1d8"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -177,7 +177,7 @@ const Projects = () => {
                   />
                 </a>
                 <a
-                  href="https://www.loom.com/share/0e5404b67872492c9c631691f5969651"
+                  href="https://www.loom.com/share/15c69c1434a043aab1bfda92cfaad24b"
                   rel="noreferrer"
                   target="_blank"
                 >
