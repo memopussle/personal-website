@@ -56,7 +56,7 @@ const Experience = () => {
           <p>
             This is a demanding role where a high degree of accuracy is
             required, especially when handling private or sensitive information.
-            Made duties included placing and receiving phone calls, updating CRM
+            Main duties included placing and receiving phone calls, updating CRM
             systems, dispatching external customer communications and completing
             financial crime work.
           </p>
