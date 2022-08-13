@@ -36,7 +36,7 @@
 
   &__button {
     &:not(:last-child) {
-      margin-right: var(--small-padding);
+     
       margin-bottom: var(--small-padding);
     }
   }
@@ -64,6 +64,15 @@
 
     &-wrapper {
       position: relative;
+    }
+  }
+}
+@media only screen and (min-width: 40rem) {
+ 
+  .skill__button {
+    &:not(:last-child) {
+      margin-right: var(--small-padding);
+   
     }
   }
 }

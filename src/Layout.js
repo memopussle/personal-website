@@ -42,7 +42,7 @@ const Layout = () => {
     gsap.fromTo(
       element,
       {
-        y: -50,
+        y: 50,
         opacity: 0,
       },
       {
