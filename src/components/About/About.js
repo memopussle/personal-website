@@ -5,8 +5,8 @@ import "./About.scss";
 const About = () => {
   
   return (
-    <section className="section-margin" id="about">
-      <div className="container" >
+    <section className="section-margin" >
+      <div className="container about" >
         <div className="about__wrapper ">
           <h3 className="about__title primary-text">
             About <span className="about__title--2">Me</span>
