@@ -90,7 +90,7 @@ const Contact = () => {
         </a>
       </div>
       <div>
-        <h4 className="email__title">
+        <h4 className="email__title primary-text">
           Drop a <span className="color-orange">message</span>
         </h4>
         <form ref={form} onSubmit={sendEmail} className="email__form">
@@ -106,8 +106,6 @@ const Contact = () => {
             </button>
           </div>
         </form>
-
-   
 
         <p className="email__message">{message}</p>
       </div>
