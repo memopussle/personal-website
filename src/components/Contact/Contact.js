@@ -4,6 +4,7 @@ import { AiOutlineMail, AiOutlinePhone, AiFillLinkedin, AiFillGithub, AiFillTwit
 import { GoLocation } from "react-icons/go";
 import emailjs from "@emailjs/browser";
 
+
 const Contact = () => {
   const form = useRef();
   const [message, setMessage] = useState("");
@@ -100,11 +101,14 @@ const Contact = () => {
           <label>Message</label>
           <textarea name="message" />
           <div>
-            <button className="normal-button small-margin" type="submit">
+            <button className="normal-button small-margin " type="submit">
               SEND
             </button>
           </div>
         </form>
+
+   
+
         <p className="email__message">{message}</p>
       </div>
     </div>
