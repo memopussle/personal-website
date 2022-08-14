@@ -30,7 +30,7 @@ const Projects = () => {
   useEffect(() => {
     gsap.fromTo(
       project2.current,
-      { x: -30, opacity: 0 },
+      { x: -20, opacity: 0 },
       {
         x: 0,
         scale: 1,
@@ -46,7 +46,7 @@ const Projects = () => {
 
       gsap.fromTo(
         project3.current,
-        { x: 30, opacity: 0 },
+        { x: 20, opacity: 0 },
         {
           x: 0,
           scale: 1,
