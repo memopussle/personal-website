@@ -24,15 +24,13 @@ const Layout = () => {
 
     gsap.fromTo(
       el,
-      { opacity: 0, scale: 0.2 },
+      { opacity: 0, scale: 0.7 },
       {
         opacity: 1,
-        duration: 0.5,
-        scale: 1.1,
+        scale: 1,
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",
-          end: "top top",
+      
           scrub: true,
         },
       }

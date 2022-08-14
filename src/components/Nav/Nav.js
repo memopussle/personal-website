@@ -180,7 +180,7 @@ const Nav = () => {
               rel="noreferrer"
               target="_blank"
             >
-              CONTACT ME
+              EMAIL ME
             </button>
           </li>
         </ul>
