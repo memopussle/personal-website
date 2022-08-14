@@ -31,7 +31,7 @@ const Layout = () => {
         scrollTrigger: {
           trigger: el,
           start: "top bottom",
-          end: "bottom center",
+          end: "top center",
           scrub: true,
         },
       }
@@ -87,7 +87,7 @@ const Layout = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 3,
+        duration: 5,
         ease: "Expo.easeInOut",
         scrollTrigger: {
           trigger: projectRef.current,

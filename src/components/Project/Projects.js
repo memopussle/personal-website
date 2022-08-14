@@ -11,15 +11,55 @@ import video3 from "../../img/crypto-app.mp4";
 import "./Project.scss";
 import { FaGithub, FaYoutube, FaTable } from "react-icons/fa";
 import Popup from "./Popup/Popup";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const [popUp, setPopUp] = useState(false);
+  const project2 = useRef(null);
+  const project3 = useRef(null);
 
   const toggle = () => {
     setPopUp(!popUp);
   };
+
+  //animation on project 1
+  useEffect(() => {
+    gsap.fromTo(
+      project2.current,
+      { x: -300, opacity: 0 },
+      {
+        x: 0,
+        scale: 1,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: project2.current,
+          start: "top bottom",
+          end: "top center",
+          scrub: true,
+        },
+      }
+    );
+
+      gsap.fromTo(
+        project3.current,
+        { x: 300, opacity: 0 },
+        {
+          x: 0,
+          scale: 1,
+          opacity: 1,
+          scrollTrigger: {
+            trigger: project3.current,
+            start: "top bottom",
+            end: "top center",
+            scrub: true,
+          },
+        }
+      );
+  }, []);
 
   return (
     <div id="projects">
@@ -84,7 +124,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="video--2">
+          <div className="video--2" ref={project2}>
             <Link to="/project2">
               <HoverVideoPlayer
                 videoSrc={video2}
@@ -143,7 +183,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="video--3">
+          <div className="video--3" ref={project3}>
             <Link to="/project3">
               <HoverVideoPlayer
                 videoSrc={video3}
