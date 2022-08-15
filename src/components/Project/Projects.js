@@ -7,7 +7,7 @@ import {
 } from "./Videos/PausedOverlay";
 import LoadingOverlay from "./Videos/LoadingOverlay";
 import video2 from "../../img/overthesea.mp4";
-import video3 from "../../img/crypto-app.mp4";
+import video3 from "../../img/crypto-website.mp4";
 import "./Project.scss";
 import { FaGithub, FaYoutube, FaTable } from "react-icons/fa";
 import Popup from "./Popup/Popup";
