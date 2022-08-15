@@ -20,9 +20,12 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+https://user-images.githubusercontent.com/91854884/184564131-b3e7d24c-15aa-4091-96b9-46fc0d191432.mp4
+
+
 
 
 [View My Portfolio Website here](https://www.thuanhgiang.com/)
