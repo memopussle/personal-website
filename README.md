@@ -27,7 +27,7 @@
 
 [View My Portfolio Website here](https://www.thuanhgiang.com/)
 
-This is my portfolio website that showcases everything about me and all of the projects I have done.
+This is my portfolio website that showcases everything about me and my selected projects.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
