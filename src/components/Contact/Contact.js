@@ -50,13 +50,13 @@ const Contact = () => {
           <GoLocation size={30} /> Auckland, New Zealand
         </p>
       </div>
-      <div className="contact__icons">
+      <div className="contact__icons ">
         <a
           href="https://www.linkedin.com/in/thu-giang-20b2111ba/"
           target="_blank"
           rel="noreferrer"
         >
-          <AiFillLinkedin size={35} style={{ fill: "url(#blue-gradient)" }} />
+          <AiFillLinkedin size={30} style={{ fill: "url(#blue-gradient)" }} />
         </a>
         <a
           href="https://medium.com/@xanhtham.cuc"
@@ -64,7 +64,7 @@ const Contact = () => {
           rel="noreferrer"
         >
           <AiFillMediumCircle
-            size={35}
+            size={30}
             style={{ fill: "url(#more-blue-gradient)" }}
           />
         </a>
@@ -74,7 +74,7 @@ const Contact = () => {
           rel="noreferrer"
         >
           <AiFillTwitterCircle
-            size={35}
+            size={30}
             style={{ fill: "url(#purple-gradient)" }}
           />
         </a>
@@ -84,7 +84,7 @@ const Contact = () => {
           rel="noreferrer"
         >
           <AiFillGithub
-            size={35}
+            size={30}
             style={{ fill: "url(#more-purple-gradient)" }}
           />
         </a>

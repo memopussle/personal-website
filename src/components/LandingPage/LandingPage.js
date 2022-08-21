@@ -96,7 +96,7 @@ const LandingPage = () => {
               rel="noreferrer"
             >
               <AiFillLinkedin
-                size={35}
+                size={30}
                 style={{ fill: "url(#blue-gradient)" }}
               />
             </a>
@@ -106,7 +106,7 @@ const LandingPage = () => {
               rel="noreferrer"
             >
               <AiFillMediumCircle
-                size={35}
+                size={30}
                 style={{ fill: "url(#more-blue-gradient)" }}
               />
             </a>
@@ -116,7 +116,7 @@ const LandingPage = () => {
               rel="noreferrer"
             >
               <AiFillTwitterCircle
-                size={35}
+                size={30}
                 style={{ fill: "url(#purple-gradient)" }}
               />
             </a>
@@ -126,7 +126,7 @@ const LandingPage = () => {
               rel="noreferrer"
             >
               <AiFillGithub
-                size={35}
+                size={30}
                 style={{ fill: "url(#more-purple-gradient)" }}
               />
             </a>

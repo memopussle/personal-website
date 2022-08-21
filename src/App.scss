@@ -77,29 +77,29 @@ button {
 }
 
 h1 {
-  font-size: clamp(4rem, 4.5vw, 7rem);
+  font-size: clamp(3.5rem, 4vw, 6.5rem);
 }
 
 h2 {
-  font-size: clamp(3.5rem, 4vw, 5rem);
+  font-size: clamp(3.25rem, 3.25vw, 5rem);
 }
 
 h3 {
-  font-size: clamp(3rem, 3.5vw, 4.5rem);
+  font-size: clamp(3rem, 3vw, 4.5rem);
 }
 h4 {
-  font-size: clamp(2.5rem, 3vw, 4rem);
+  font-size: clamp(2.75rem, 2.75vw, 4rem);
 }
 
 h5 {
-  font-size: clamp(2rem, 2.5vw, 3.5rem);
+  font-size: clamp(2.5rem, 2.5vw, 3.5rem);
 }
 p,
 button,
 a,
 li,
 label {
-  font-size: clamp(1.1rem, 1.3vw, 1.2rem);
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
 }
 
 ul {

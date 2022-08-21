@@ -32,7 +32,8 @@
 
   &__icons {
     text-align: center;
-    & > * {
+
+    & > *:not(:last-child) {
       margin-right: var(--small-padding);
     }
   }
