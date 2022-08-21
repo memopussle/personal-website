@@ -200,7 +200,7 @@ const Popup = ({ popUp, setPopUp }) => {
                 />
               </a>
               <a
-                href="https://luxury-seahorse-505c6e.netlify.app/"
+                href="https://sweet-druid-592559.netlify.app/"
                 rel="noreferrer"
                 target="_blank"
               >
