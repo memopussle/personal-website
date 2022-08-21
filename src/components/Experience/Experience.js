@@ -17,7 +17,7 @@ const Experience = () => {
         <BsDot
           size={80}
           className="experience__icon--1"
-          style={{ fill: "url(#more-blue-gradient)" }}
+          style={{ fill: "url(#more-purple-gradient)" }}
         />
 
         <div className="experience__text--1">
@@ -44,7 +44,7 @@ const Experience = () => {
           <BsDot
             size={80}
             className="experience__icon--2"
-            style={{ fill: "url(#more-purple-gradient)" }}
+            style={{ fill: "url(#more-blue-gradient)" }}
             
           />
           <h5 className="secondary-font font-weight-normal small-margin">
