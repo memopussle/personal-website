@@ -10,6 +10,7 @@ import {
   SiMaterialui,
   SiAntdesign,
   SiSass,
+  SiRedux
 } from "react-icons/si";
 import { FaNode } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -71,8 +72,10 @@ const Skillset = ({ currentTab, setCurrentTab }) => {
         />,
         <SiAntdesign size={150} style={{ fill: "url(#purple-gradient)" }} />,
         <SiSass size={150} style={{ fill: "url(#more-blue-gradient)" }} />,
+        <SiRedux size={150} style={{ fill: "url(#more-blue-gradient)" }} />,
       ],
-      content: "In addition to previous mentions, I'm also competent in the use of frameworks/libraries including Bootstrap, MaterialUI, Antd Design and Sass. There is also a lot I can still learn about Git, therefore I am continuously studying it as I go.",
+      content:
+        "In addition to previous mentions, I'm also competent in the use of frameworks/libraries including Redux-toolkit, Bootstrap, MaterialUI, Antd Design and Sass. There is also a lot I can still learn about Git, therefore I am continuously studying it as I go.",
     },
   ];
 
