@@ -111,7 +111,7 @@ const Projects = () => {
                   />
                 </a>
                 <a
-                  href="https://clothing-shop-overthesea.herokuapp.com/"
+                  href="https://tumekenz.herokuapp.com/"
                   rel="noreferrer"
                   target="_blank"
                 >
