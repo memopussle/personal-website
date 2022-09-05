@@ -1,5 +1,5 @@
-.project { 
-  p {
+.project {
+  & p:first-child{
     color: var(--primary-text-color);
   }
   &__title {
@@ -9,20 +9,13 @@
     margin-bottom: var(--small-padding);
   }
 
- &__button {
-  display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-top: var(--small-padding);
+  &__icons {
+    & > * {
+      margin-right: var(--small-padding);
     }
-  &__icons  {
-    & > *{
-margin-right: var(--small-padding);
-    }
-  
-     margin-top: var(--small-padding);
+
+    margin-top: var(--small-padding);
   }
- 
 
   &__description {
     display: flex;
@@ -49,17 +42,6 @@ margin-right: var(--small-padding);
   gap: var(--small-padding);
   position: relative;
 }
-
-@media only screen and (min-width: 35rem) {
-  .project {
-    &__button {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-  }
-}
-
 
 @media only screen and (min-width: 80rem) {
   .project {
