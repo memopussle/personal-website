@@ -5,7 +5,7 @@ import LoadingOverlay from "./Videos/LoadingOverlay";
 import { FaGithub, FaYoutube, FaTable } from "react-icons/fa";
 import "./Project.scss";
 
-const EachProject = ({toggle, video,PausedOverlay}) => {
+const EachProject = ({toggle, video,PausedOverlay, project, loom,liveSite, description}) => {
 
   return (
     <div>
@@ -19,9 +19,7 @@ const EachProject = ({toggle, video,PausedOverlay}) => {
         />
       </Link>
       <p className="project__description">
-        Tui Meke NZ: A travel website that offers special tours in Aotearoa and
-        allows users to search for attractions, hotels and restaurants anywhere
-        in the world.
+        {description}
       </p>
 
       <div className="project__icons">
@@ -32,14 +30,14 @@ const EachProject = ({toggle, video,PausedOverlay}) => {
         </Link>
         <div className="project__button">
           <a
-            href="https://github.com/memopussle/client_tumeke_nz"
+            href={project}
             rel="noreferrer"
             target="_blank"
           >
             <FaGithub size={30} style={{ fill: "url(#more-blue-gradient)" }} />
           </a>
           <a
-            href="https://www.loom.com/share/f4cf422c80a543d388acce141c295e4a"
+            href={loom}
             rel="noreferrer"
             target="_blank"
           >
@@ -49,7 +47,7 @@ const EachProject = ({toggle, video,PausedOverlay}) => {
             />
           </a>
           <a
-            href="https://tumekenz.herokuapp.com/"
+            href={liveSite}
             rel="noreferrer"
             target="_blank"
           >
