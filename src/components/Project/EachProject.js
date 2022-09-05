@@ -29,7 +29,6 @@ const EachProject = ({
         <div className="description-box">
           <p>{description}</p>
           <p>{technology}</p>
-
           <div className="project__icons">
             <a href={project} rel="noreferrer" target="_blank">
               <FaGithub
