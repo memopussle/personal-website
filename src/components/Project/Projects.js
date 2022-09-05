@@ -3,7 +3,7 @@ import video2 from "../../img/overthesea.mp4";
 import video3 from "../../img/crypto-website.mp4";
 import video4 from "../../img/tradify.mp4";
 import "./Project.scss";
-import React, { useState } from "react";
+import React from "react";
 import { gsap } from "gsap";
 import EachProject from "./EachProject";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

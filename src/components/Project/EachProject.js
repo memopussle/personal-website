@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import HoverVideoPlayer from "react-hover-video-player";
 import LoadingOverlay from "./Videos/LoadingOverlay";
 import { FaGithub, FaYoutube, FaTable } from "react-icons/fa";
