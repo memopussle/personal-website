@@ -17,7 +17,6 @@ const Layout = () => {
   const boxRef = useRef(null);
   const skillRef = useRef(null);
   const aboutRef = useRef(null);
-  const projectRef = useRef(null);
   const contactRef = useRef(null);
   useEffect(() => {
     const el = boxRef.current;
@@ -41,7 +40,7 @@ const Layout = () => {
     gsap.fromTo(
       element,
       {
-        y: 50,
+        y: 40,
         opacity: 0,
       },
       {
@@ -53,7 +52,7 @@ const Layout = () => {
           trigger: element,
           scrub: true,
           start: "top bottom",
-          end: "top top",
+          end: "top center",
         },
       }
     );
@@ -61,12 +60,10 @@ const Layout = () => {
     gsap.fromTo(
       skillRef.current,
       {
-        opacity: 0,
         y: -50,
       },
       {
         duration: 2,
-        opacity: 1,
         y: 0,
         ease: "Expo.easeInOut",
         scrollTrigger: {
@@ -78,25 +75,6 @@ const Layout = () => {
       }
     );
 
-    gsap.fromTo(
-      projectRef.current,
-      {
-        opacity: 0,
-        y: 200,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 5,
-        ease: "Expo.easeInOut",
-        scrollTrigger: {
-          trigger: projectRef.current,
-          scrub: true,
-          start: "top bottom",
-          end: "top top",
-        },
-      }
-    );
 
     gsap.fromTo(
       contactRef.current,
@@ -126,9 +104,7 @@ const Layout = () => {
         <Skills />
       </div>
 
-      <div ref={projectRef}>
         <Projects />
-      </div>
 
       <div ref={boxRef}>
         <Experience />
