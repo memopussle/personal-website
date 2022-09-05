@@ -17,13 +17,11 @@ const EachProject = ({
   return (
     <div className="project">
       <div className="project__thumbnail">
-        <Link to={to}>
-          <HoverVideoPlayer
-            videoSrc={video}
-            loadingOverlay={<LoadingOverlay />}
-            className="project__video"
-          />
-        </Link>
+        <HoverVideoPlayer
+          videoSrc={video}
+          loadingOverlay={<LoadingOverlay />}
+          className="project__video"
+        />
       </div>
       <div className="project__description">
         <div className="description-box">
