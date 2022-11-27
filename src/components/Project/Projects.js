@@ -22,7 +22,7 @@ const Projects = () => {
             video={video1}
             project="https://github.com/memopussle/client_tumeke_nz"
             loom="https://www.loom.com/share/f4cf422c80a543d388acce141c295e4a"
-            liveSite="https://tumekenz.herokuapp.com/"
+            liveSite="https://tumeke-nz.onrender.com"
             description="Tui Meke NZ: A travel website that offers special tours in Aotearoa and
         allows users to search for attractions, hotels and restaurants anywhere
         in the world."
@@ -54,7 +54,7 @@ const Projects = () => {
             video={video4}
             project="https://github.com/memopussle/job_tracker"
             loom="https://www.loom.com/share/15c69c1434a043aab1bfda92cfaad24b"
-            liveSite="https://job-idenitifier.herokuapp.com/"
+            liveSite="https://job-tracker.onrender.com"
             description="Tradify is a job portal where tradies can keep track of their jobs.A Tradie can filter, sort, add a new job, edit a job, and leave any numbers of comments for each job. "
             to="/project4"
             technology="Built with: React, JavaScript, MongoDB, Express, NodeJS"

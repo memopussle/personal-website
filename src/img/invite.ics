@@ -1,0 +1,90 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:New Zealand Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T030000
+TZOFFSETFROM:+1300
+TZOFFSETTO:+1200
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=4
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:+1200
+TZOFFSETTO:+1300
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1SU;BYMONTH=9
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Angela McCarthy:mailto:angela.mccarthy@fergus.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Jacques Ja
+ mieson:mailto:jacques.jamieson@fergus.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Ali Haydar
+ :mailto:ali.haydar@fergus.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=xanhtham.c
+ uc@gmail.com:mailto:xanhtham.cuc@gmail.com
+DESCRIPTION;LANGUAGE=en-GB:Hi Thu\n\nAli & Jay are looking forward to meeti
+ ng you on Friday at 2:30pm via Teams.  Please use the link provided in thi
+ s invitation\, and I hope it goes well!\n\nThanks\nAngela\n_______________
+ _________________________________________________________________\nMicroso
+ ft Teams meeting\nJoin on your computer or mobile app\nClick here to join 
+ the meeting<https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjJjYWF
+ jYzAtY2I1Zi00YTk1LWFmZTctYTM5NGY0MTJiOTY5%40thread.v2/0?context=%7b%22Tid%
+ 22%3a%2220abd4d6-993f-463b-b730-6df4e0880eda%22%2c%22Oid%22%3a%2270cefb43-
+ d284-41db-8d33-a8f4ccd46f2b%22%7d>\nMeeting ID: 464 886 971 480\nPasscode:
+  R2od5D\nDownload Teams<https://www.microsoft.com/en-us/microsoft-teams/do
+ wnload-app> | Join on the web<https://www.microsoft.com/microsoft-teams/jo
+ in-a-meeting>\nLearn more<https://aka.ms/JoinTeamsMeeting> | Meeting optio
+ ns<https://teams.microsoft.com/meetingOptions/?organizerId=70cefb43-d284-4
+ 1db-8d33-a8f4ccd46f2b&tenantId=20abd4d6-993f-463b-b730-6df4e0880eda&thread
+ Id=19_meeting_NjJjYWFjYzAtY2I1Zi00YTk1LWFmZTctYTM5NGY0MTJiOTY5@thread.v2&m
+ essageId=0&language=en-GB>\n______________________________________________
+ __________________________________\n
+UID:040000008200E00074C5B7101A82E008000000009BD74F2D78C2D801000000000000000
+ 01000000083977205DB7A584F814F0036F013E4FE
+SUMMARY;LANGUAGE=en-GB:DevOps Intern Interview with Thu Giang
+DTSTART;TZID=New Zealand Standard Time:20220909T143000
+DTEND;TZID=New Zealand Standard Time:20220909T150000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20220907T230330Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:1
+LOCATION;LANGUAGE=en-GB:
+X-MICROSOFT-CDO-APPT-SEQUENCE:1
+X-MICROSOFT-CDO-OWNERAPPTID:2120826011
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_NjJjYWFjYzAtY2I1Zi00YTk1LWFmZTctYTM5NGY0MTJiOTY5%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%2220abd4d6-993f-463b-b730-6df4e0880eda%22%2c%22O
+ id%22%3a%2270cefb43-d284-41db-8d33-a8f4ccd46f2b%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/20abd4d6-993f-463b-b730-6df4e0880eda/70cefb43-d284-41db-8d33-a
+ 8f4ccd46f2b/19_meeting_NjJjYWFjYzAtY2I1Zi00YTk1LWFmZTctYTM5NGY0MTJiOTY5@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_NjJjYWFjYzAtY2I1Zi00YTk
+ 1LWFmZTctYTM5NGY0MTJiOTY5@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-ONLINEMEETINGCONFLINK:conf:sip:angela.mccarthy@fergus.com\;gruu
+ \;opaque=app:conf:focus:id:teams:2:0!19:meeting_NjJjYWFjYzAtY2I1Zi00YTk1LW
+ FmZTctYTM5NGY0MTJiOTY5-thread.v2!70cefb43d28441db8d33a8f4ccd46f2b!20abd4d6
+ 993f463bb7306df4e0880eda
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
